@@ -11,14 +11,24 @@
 // li[3].textContent="hello";
 // li[3].style.background="green";
 ///query selector
-var header = document.querySelector('#main-header');
-header.style.borderBottom="solid 4px #ccc"
-var input = document.querySelector('input');
-input.value="hiiii"
-var item = document.querySelector('.list-group-item:nth-child(2)');
-item.style.backgroundColor="green";
-var third = document.querySelector('.list-group-item:nth-child(3)');
-third.style.color="white";
+// var header = document.querySelector('#main-header');
+// header.style.borderBottom="solid 4px #ccc"
+// var input = document.querySelector('input');
+// input.value="hiiii"
+// var item = document.querySelector('.list-group-item:nth-child(2)');
+// item.style.backgroundColor="green";
+// var third = document.querySelector('.list-group-item:nth-child(3)');
+// third.style.color="white";
+//Query selector all
+var even=document.querySelectorAll('li:nth-child(even)')
+console.log(even)
+even[0].style.color='green';
+var odd=document.querySelectorAll('li:nth-child(odd)')
+console.log(odd)
+for(var i=0; i< odd.length; i++)
+{
+    odd[i].style.backgroundColor='green';
 
+}
 
 

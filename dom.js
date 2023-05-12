@@ -105,8 +105,7 @@ filter.addEventListener('keyup', filterItems);
 // Add item
 function addItem(e){
   e.preventDefault();
-  console.log(1);
-
+ 
   // Get input value
   var newItem = document.getElementById('item').value;
 
@@ -152,6 +151,8 @@ function filterItems(e){
   // Convert to an array
   Array.from(items).forEach(function(item){
     var itemName = item.firstChild.textContent;
+    
+
     if(itemName.toLowerCase().indexOf(text) != -1){
       item.style.display = 'block';
     } else {
